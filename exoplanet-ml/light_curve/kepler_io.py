@@ -210,8 +210,8 @@ def read_kepler_light_curve(filenames,
       quarter = hdu_list["PRIMARY"].header["QUARTER"]
       light_curve = hdu_list[light_curve_extension].data
 
-    time = light_curve.TIME
-    flux = light_curve.PDCSAP_FLUX
+    time = light_curve.TIME.astype(np.float32)
+    flux = light_curve.PDCSAP_FLUX.astype(np.float32)
     if not time.size:
       continue  # No data.
 
