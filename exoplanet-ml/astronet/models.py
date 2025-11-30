@@ -22,6 +22,8 @@ from astronet.astro_cnn_model import astro_cnn_model
 from astronet.astro_cnn_model import configurations as astro_cnn_configurations
 from astronet.astro_fc_model import astro_fc_model
 from astronet.astro_fc_model import configurations as astro_fc_configurations
+from astronet.astro_wavenet_model import astro_wavenet_model
+from astronet.astro_wavenet_model import configurations as astro_wavenet_configurations
 from astronet.astro_model import astro_model
 from astronet.astro_model import configurations as astro_configurations
 
