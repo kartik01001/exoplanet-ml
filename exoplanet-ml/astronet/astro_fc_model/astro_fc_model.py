@@ -77,6 +77,10 @@ class AstroFCModel(astro_model.AstroModel):
     Raises:
       ValueError: If hparams.pooling_type is unrecognized.
     """
+    # Squeeze out extra dimension if present (from dataset reshape)
+    if len(inputs.shape) == 3 and inputs.shape[2] == 1:
+      inputs = tf.squeeze(inputs, axis=2)
+      
     if hparams.num_local_layers == 0:
       return inputs
 
