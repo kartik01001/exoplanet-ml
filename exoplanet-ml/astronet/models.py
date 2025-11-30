@@ -30,6 +30,7 @@ _MODELS = {
     "AstroModel": (astro_model.AstroModel, astro_configurations),
     "AstroFCModel": (astro_fc_model.AstroFCModel, astro_fc_configurations),
     "AstroCNNModel": (astro_cnn_model.AstroCNNModel, astro_cnn_configurations),
+    "AstroWaveNetModel": (astro_wavenet_model.AstroWaveNetModel, astro_wavenet_configurations),
 }
 
 
